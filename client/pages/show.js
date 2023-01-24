@@ -21,11 +21,12 @@ const ShowContact = () => {
         setTelegram("");
         setDescription("");
         setDiscord("");
-        setLoading(true);
+        
         if(!address) {
           setErrorMsg("Адрес пользователя не обнаружен, введи его!")
           return;
         }
+        setLoading(true);
         try{
           const contact = await getContactByAddress(address);
           setTelegram(contact.telegram);
