@@ -1,8 +1,8 @@
 import Layout from "../components/Layout";
 
 const UserPage = () => {
-    return (<Layout>User</Layout>);
+    return (<Layout>user</Layout>)
 }
+
  
 export default UserPage;
-
