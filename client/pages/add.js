@@ -21,7 +21,7 @@ const AddContact = () => {
         setErrorMsg("ТГ не введено")
     }
 
-    await provider.send('eth_requestAccounts', []);
+    // await provider.send('eth_requestAccounts', []);
     const signer = provider.getSigner();
     const contactFactoryWithSigner = contactFactory.connect(signer);
     console.log("func", contactFactoryWithSigner.functions)
